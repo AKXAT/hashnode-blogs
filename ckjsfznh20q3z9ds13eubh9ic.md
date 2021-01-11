@@ -48,6 +48,7 @@ This way the backward traversal becomes very easy.
 - **Creating a class for Node , so we can create or change node functionality whenever we feel like  
 **
 
+
 ```
 class Node:
     #Class for creating a Node which contains the data and the next address 
@@ -56,9 +57,11 @@ class Node:
         self.data = data
         self.next = next
 ``` 
+ 
 
 - **Creating a class for Linked List to add functions 
 **
+
 ```
 class LinkedList:
     #Creating a class for LinkedList which contains various functions 
@@ -66,6 +69,7 @@ class LinkedList:
         #head of the Linked List
         self.head = None
 ``` 
+ 
 
 - **Function for adding element at the start **
     
@@ -78,6 +82,7 @@ def insert_at_start(self,data):
 ``` 
 - **Function for inserting element at the end 
 **
+
 ```
 def insert_at_end(self,data):
         if self.head is None: #which means there is nothing in the Linked List
@@ -89,6 +94,7 @@ def insert_at_end(self,data):
             temp = temp.next
         temp.next = Node(data,None)
 ``` 
+
 
 - **Function for finding length of the Linked List **
 
