@@ -33,7 +33,7 @@ print(s.pop())
 
 ### Using Deque 
 
-A double-ended queue, or deque, has the feature of adding and removing elements from either end. The Deque module is a part of collections library. It has the methods for adding and removing elements which can be invoked directly with arguments. In the below program we import the collections module and declare a deque. Without need of any class we use the in-built implement these methods directly.
+A double-ended queue, or deque, has the feature of adding and removing elements from either end. The Deque module is a part of collections library. It has the methods for adding and removing elements which can be invoked directly with arguments. In the below program we import the collections module and declare a deque. Without need of any class we use the in-built implement methods directly.
 
 - Importing Deque
 
