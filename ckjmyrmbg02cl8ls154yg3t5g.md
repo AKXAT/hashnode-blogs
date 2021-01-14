@@ -100,8 +100,10 @@ Hence k (which is the number of iterations) = **O(log n)**
 # Conclusion 
 Time and space complexity depends on lots of things like hardware, operating system, processors, etc. However, we don't consider any of these factors while analyzing the algorithm.
 
+**So , This was the quick overview of Big O . I hope you liked the article . Follow back for the more upcoming article**
 
- [OG Image credits](https://unsplash.com/@hellokellybrito) 
+
+> Leave a like if you learned something today.
 
 
 
