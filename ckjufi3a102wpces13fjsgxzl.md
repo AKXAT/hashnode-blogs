@@ -1,5 +1,9 @@
 ## Hash Table in Python
 
+> 
+ [<- Go Back to Index ](https://carboncoffee.hashnode.dev/datastructures) 
+
+
 ## What is Hash Table ?
 A hash table is a data structure that implements an associative array abstract data type, a structure that can map keys to values. In other words we can say that , Hash Table is a data structure that stores the values using a **KEY:VALUE pairs.**
 
