@@ -1,15 +1,19 @@
 ## Binary Tree using Python
 
+> 
+ [<- Go Back to Index ](https://carboncoffee.hashnode.dev/datastructures) 
+
+
 ### Before we start ...
-Just before we start I would like you to go through the concepts of [General Tree (*click here*)](https://carboncoffee.hashnode.dev/implementing-general-tree-using-python). In this way you can get a quick brief about **Trees** in general and its keywords.
+Just before we start I would like you to go through the concepts of [General Tree (*click here*)](https://carboncoffee.hashnode.dev/implementing-general-tree-using-python). In this way, you can get a quick brief about **Trees** in general and its keywords.
 
-### What problem does Binary Tree solve ?
+### What problem does Binary Tree solve?
 
-- In many different programming we have a thing called **Sets** . Sets are used to store multiple items in a single variable. Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage. 
-- **Sets** are more like Lists but there is a difference , when we insert element in a set it will make sure that those elements are unique to the set unlike a list where duplicates can be present.
-- Internally to implement set , one of the ways is using the **Binary Search Tree**. 
+- In many different programming we have a thing called **Sets**. Sets are used to store multiple items in a single variable. Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage. 
+- **Sets** are more like Lists but there is a difference when we insert an element in a set it will make sure that those elements are unique to the set, unlike a list where duplicates can be present.
+- Internally to implement set, one of the ways is using the **Binary Search Tree**. 
 
-# What is Binary Tree ?
+# What is Binary Tree?
 - A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child.
 - A **Binary Search Tree ** it is a special case of Binary Tree where the elements have some kind of order in them. We can also say that it is an ordered or sorted **Binary tree** , is a rooted binary tree whose internal nodes each store a key greater than all the keys in the node's left subtree and less than those in its right subtree.
 ### Searching in Binary Search Tree
@@ -18,7 +22,7 @@ Just before we start I would like you to go through the concepts of [General Tre
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611734629939/BFtuAAmsS.png)
  - Assume we want to search 14 in the above Binary Search Tree then first we will compare the root that is 15 so since 15 is greater than 14 so if 14 resides in the Tree hence it should be on the left side .
-- When we search then we find 12 not 14 is greater than 12 hence it should be on the right side of the sub tree. 
+- When we search then we find 12 not 14 is greater than 12 hence it should be on the right side of the subtree. 
 - Below is a visual representation of how we just searched 14 in a binary search tree
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611734948016/mApsYs7jo.png)
@@ -35,26 +39,26 @@ Since we reduced the space by 1/2  by every iteration.
 ### Inserting in Binary Search Tree 
 
 - Let's assume we want to insert and element 13 in the same binary search tree.
-- We will first compare it with 15 , since 13 is less that 15 hence it will go to the left side of the root 15 node.
+- We will first compare it with 15 since 13 is less than 15 hence it will go to the left side of the root 15 node.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611735871857/gUXcuIoP4.png)
-- Now you realize that 13 is greater than the current 12 hence it will go to the right sub tree of 12 .
-- We have 14 here and 13 is less than 14 hence it will go to the left sub tree of 14.
+- Now you realize that 13 is greater than the current 12 hence it will go to the right subtree of 12.
+- We have 14 here and 13 is less than 14 hence it will go to the left subtree of 14.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611736044801/2ajWXnNw5.png)
 
 # Breadth First Search (BFS) and Depth First Search(DFS) 
 
 - Any process for visiting all of the nodes in some order is called a **traversal.**
-There are two technique for this : **BFS and DFS**
+There are two technique for this: **BFS and DFS**
 
 ## BFS
-- BFS stands for Breadth First Search is a vertex based technique for finding a shortest path in graph. It uses a  [Queue data structure](https://carboncoffee.hashnode.dev/queue-in-python)  which follows first in first out. In BFS, one vertex is selected at a time when it is visited and marked then its adjacent are visited and stored in the queue. It is slower than DFS.
+- BFS stands for Breadth-First Search is a vertex-based technique for finding the shortest path in the graph. It uses a  [Queue data structure](https://carboncoffee.hashnode.dev/queue-in-python)  which follows first in first out. In BFS, one vertex is selected at a time when it is visited and marked then its adjacent are visited and stored in the queue. It is slower than DFS if we take the below example.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611736671307/XI8bjpJXd.png)
 
 ## DFS
-- DFS stands for Depth First Search is a edge based technique. It uses the  [Stack data structure](https://carboncoffee.hashnode.dev/implementing-stack-in-python) , performs two stages, first visited vertices are pushed into stack and second if there is no vertices then visited vertices are popped.
+- DFS stands for Depth First Search is an edge-based technique. It uses the  [Stack data structure](https://carboncoffee.hashnode.dev/implementing-stack-in-python), performs two stages, first visited vertices are pushed into the stack and second if there are no vertices then visited vertices are popped.
 
 There are three types of traversals in DFS - 
 - In-order Traversal :
@@ -76,7 +80,7 @@ class BinarySearchTreeNode:
         self.left = None
         self.right = None
 ``` 
-- Adding a Add child function to the base class.
+- Adding an Add child function to the base class.
 
 ```
 def add_child(self,data):
@@ -132,7 +136,7 @@ def search(self,value):
                 return False
 ``` 
 
-- Finally we will define a Help function for creating Initializing the class
+- Finally, we will define a Help function for creating Initializing the class
 
 ```
 def build_tree(element):
@@ -224,12 +228,12 @@ if __name__ == '__main__':
 There are 3 scenarios which we can face while deleting a Node in a binary search tree. Lets look on those -
 
 ### Deleting a node with no child
-Lets Take example of the below Tree. You want to delete 9 which doesn't have any child node . This is very simple because we can directly delete the node without rearranging the Tree.
+Let's Take the example of the below Tree. You want to delete 9 which doesn't have any child node . This is very simple because we can directly delete the node without rearranging the Tree.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611815431775/DtFFyj378.png)
 
 ### Deleting a node with one child 
-This is also simple , just we need to replace the child with the deleted node , as we can see in the below example we need to delete 23 so we will just replace it with 34
+This is also simple, just we need to replace the child with the deleted node , as we can see in the below example we need to delete 23 so we will just replace it with 34
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611815749753/DN4Xyi-IH.png)
 
@@ -240,21 +244,21 @@ This one is a bit tricky because we need to delete the node and also maintain th
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611816373065/xb_NF9s1P.png)
 
-**The steps to do this is :**
-- Copy the minimum value from the right sub tree , hence all the values which are right will remain greater and then 
+**The steps to do this is:**
+- Copy the minimum value from the right subtree, hence all the values which are right will remain greater and then 
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611816212271/PtWoy8bFx.png)
-- Delete the duplicate from the right sub tree
+- Delete the duplicate from the right subtree
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611816234818/gF6qTkkLE.png)
 
-**Alternate approach :**
+**Alternate approach:**
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611816571441/PoZWJDLuq.png)
 - You can also look into left Sub Tree and find the maximum from there.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611816618201/m8QfjNHXB.png)
-- copy that maximum value and then we can delete the copy , as we did below , we replaced 20 with the maximum value in the left sub tree which is 19 and then deleted the copy of 19.
+- copy that maximum value and then we can delete the copy, as we did below, we replaced 20 with the maximum value in the left subtree which is 19 and then deleted the copy of 19.
 
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1611816790368/TbmgNpwfL.png)
@@ -297,7 +301,7 @@ class BinarySearchTreeNode:
         return elements
 ``` 
 
-- Now let us create a function for finding the maximum value in the tree , which we might use in the deletion later.
+- Now let us create a function for finding the maximum value in the tree, which we might use in the deletion later.
 
 ```
 def find_max(self):
@@ -305,7 +309,7 @@ def find_max(self):
             return self.right.find_max()
         return self.data
 ``` 
-- Similarly we will create a function for finding the minimum value in the tree , which we will use in the deletion later.
+- Similarly, we will create a function for finding the minimum value in the tree, which we will use in the deletion later.
 
 ```
 def find_min(self):
@@ -313,7 +317,7 @@ def find_min(self):
             return self.left.find_max()
         return self.data
 ``` 
-- Finally let's add the Delete function which will take care of all the circumstances which occurs during the Deletion of a particular Node.
+- Finally, let's add the Delete function which will take care of all the circumstances which occurs during the Deletion of a particular Node.
 
 ```
 def delete(self,value):     
@@ -442,9 +446,9 @@ if __name__ == '__main__':
     print(newtree.in_order_traversal())
 
 ``` 
-- The element will be deleted .
+- The element will be deleted.
 
-**So , This was the quick overview of Binary Tree , Insertion and Deletion using Python . I hope you liked the article. Follow back for the more upcoming article**
+**So, This was the quick overview of Binary Tree, Insertion and Deletion using Python. I hope you liked the article. Follow back for the more upcoming article**
 
 
 > Leave a like if you learned something today.
