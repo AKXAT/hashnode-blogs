@@ -1,5 +1,9 @@
 ## Introduction to Arrays
 
+> 
+ [<- Go Back to Index ](https://carboncoffee.hashnode.dev/datastructures) 
+
+
 # What are Arrays ?
 
 An array is a data structure that contains a group of elements. Typically these elements are all of the same data type, such as an integer or string. 
