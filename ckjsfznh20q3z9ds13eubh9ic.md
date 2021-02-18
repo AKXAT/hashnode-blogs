@@ -1,5 +1,9 @@
 ## Linked List using Python
 
+> 
+ [<- Go Back to Index ](https://carboncoffee.hashnode.dev/datastructures) 
+
+
 ### What is the issue with Arrays ?
 
 If you want to insert or delete an element in an array at a given location then swap every element by one address space and hence the Big O complexity is O(n) .  [Click here to view the article on Arrays](https://carboncoffee.hashnode.dev/introduction-to-arrays) 
