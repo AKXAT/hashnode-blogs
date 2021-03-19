@@ -44,7 +44,7 @@ print(price.pop())
 
 ### Using Deque 
 
-A double-ended queue, or deque, has the feature of adding and removing elements from either end. The Deque module is a part of the collections library. It has the methods for adding and removing elements which can be invoked directly with arguments. In the below program we import the collections module and declare a deque. Without the need of any class, we use the in-built implement methods directly.
+A double-ended queue, or deque, has the feature of adding and removing elements from either end. The Deque module is a part of the collections library. It has the methods for adding and removing elements that can be invoked directly with arguments. In the below program we import the collections module and declare a deque. Without the need of any class, we use the in-built implement methods directly.
 
 - Importing Deque form the Collection Library 
 
@@ -52,7 +52,7 @@ A double-ended queue, or deque, has the feature of adding and removing elements 
 from collections import deque
 queue = deque()
 ``` 
-- Since in case of **Queue** we always add elements to the left side of the list so we will use the function **appendleft()**
+- Since in the case of **Queue** we always add elements to the left side of the list so we will use the function **appendleft()**
 
 
 ```
@@ -100,7 +100,14 @@ if __name__ =='__main__':
 
 ``` 
 
-**So, This was the quick overview of Queue in Python. I hope you liked the article. Follow back for the more upcoming article**
+## Thank-you! 
+
+I am glad you made it to the end of this article. I hope you got to learn something, if so please leave a **Like** which will encourage me for my upcoming write-ups. 
 
 
-> Leave a like if you learned something today.
+> 
+- [My GitHub Repos](https://github.com/akxat)  
+- Connect with me on  [Linkedin](https://www.linkedin.com/in/sharma-akshat/) 
+- Start  [your own blogs ](https://hashnode.com/@AkshatSharma/joinme) 
+
+%%[wid-1]
