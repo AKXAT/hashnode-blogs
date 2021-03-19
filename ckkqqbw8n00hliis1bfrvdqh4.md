@@ -79,9 +79,9 @@ if __name__ =='__main__':
 
     #output is [0, 1, 2, 3, 3, 4, 5, 34, 89]
 ``` 
-- One more thing that we need to keep in mind that , if in any case the user sends in a sorted list then we don't want our code to run through the whole loop and then figure out that it was sorted . 
+- One more thing that we need to keep in mind that, if in any case, the user sends in a sorted list then we don't want our code to run through the whole loop and then figure out that it was sorted. 
 - Simply we can check that. **If after the first iteration there were no swaps made which means that the list that was provided as an Input was already sorted** and we can break through it. 
-- For this we will make use of the variable **Swap which will be initially set to False** , if the loops swaps the element so the Swap variable will be set to True else will remain false.
+- For this we will make use of the variable **Swap which will be initially set to False**, if the loops swaps the element so the Swap variable will be set to True else will remain false.
 
 
 ```
@@ -110,7 +110,14 @@ if __name__ =='__main__':
 ``` 
 - You can actually Debug this code and check how this is more efficient as compared to the above code, try giving in a sorted element list.
 
-**So, This was the quick overview of Bubble Sort using Python. I hope you liked the article. Follow back for more upcoming articles**
+## Thank-you! 
+
+I am glad you made it to the end of this article. I hope you got to learn something, if so please leave a **Like** which will encourage me for my upcoming write-ups. 
 
 
-> Leave a like if you learned something today.
+> 
+- [My GitHub Repos](https://github.com/akxat)  
+- Connect with me on  [Linkedin](https://www.linkedin.com/in/sharma-akshat/) 
+- Start  [your own blogs ](https://hashnode.com/@AkshatSharma/joinme) 
+
+%%[wid-1]
