@@ -175,7 +175,7 @@ if __name__ == '__main__':
 - Now we swap the elements 
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1612857498565/vCR056WoX.png)
-- We again perform the same task, the rule for P index is that you move P until you find the element which is greater than Pivot whereas in case of I Index we move I till we find the element less than Pivot.
+- We again perform the same task, the rule for the P index is that you move P until you find the element which is greater than Pivot whereas in the case of I Index we move I till we find the element less than Pivot.
 
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1612859144592/dn6JtRXOk.png)
@@ -192,8 +192,14 @@ if __name__ == '__main__':
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1612859284295/qeTPuc0uk.png)
 
 - Now you can try giving it a shot by implementing this way of partitioning using python.
+## Thank-you! 
 
-**So, This was the quick overview of Quick Sort using Python. I hope you liked the article. Follow back for more upcoming articles**
+I am glad you made it to the end of this article. I hope you got to learn something, if so please leave a **Like** which will encourage me for my upcoming write-ups. 
 
 
-> Leave a like if you learned something today.
+> 
+- [My GitHub Repos](https://github.com/akxat)  
+- Connect with me on  [Linkedin](https://www.linkedin.com/in/sharma-akshat/) 
+- Start  [your own blogs ](https://hashnode.com/@AkshatSharma/joinme) 
+
+%%[wid-1]
