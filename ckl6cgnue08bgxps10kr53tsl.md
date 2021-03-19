@@ -81,7 +81,14 @@ if __name__ == '__main__':
 
 - Output will come-out as **[21, 23, 54, 56, 67, 78, 90]**
 
-**So, This was the quick overview of Insertion Sort using Python. I hope you liked the article. Follow back for more upcoming articles**
+## Thank-you! 
+
+I am glad you made it to the end of this article. I hope you got to learn something, if so please leave a **Like** which will encourage me for my upcoming write-ups. 
 
 
-> Leave a like if you learned something today.
+> 
+- [My GitHub Repos](https://github.com/akxat)  
+- Connect with me on  [Linkedin](https://www.linkedin.com/in/sharma-akshat/) 
+- Start  [your own blogs ](https://hashnode.com/@AkshatSharma/joinme) 
+
+%%[wid-1]
