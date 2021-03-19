@@ -5,7 +5,7 @@
 
 
 ## What are Stacks?
-a stack is an abstract data type that serves as a collection of elements, with two main principal operations: **Push**, which adds an element to the collection, and **Pop**, which removes the most recently added element that was not yet removed. This is know as **Last In First Out** or **LIFO**.
+a stack is an abstract data type that serves as a collection of elements, with two main principal operations: **Push**, which adds an element to the collection, and **Pop**, which removes the most recently added element that was not yet removed. This is known as **Last In First Out** or **LIFO**.
 
 
  [Big O complexity](https://carboncoffee.hashnode.dev/big-o-notation-quick-recap)  for Pushing and Popping is O(1) and Searching element by value is O(n).
@@ -31,13 +31,13 @@ print(s.pop())
 #output - https://carboncoffee.hashnode.dev/'
 ``` 
 ### Implementing Stacks 
-1. We can implement **Stacks** using  [Dynamic Array](https://carboncoffee.hashnode.dev/introduction-to-arrays)  but there is a problem with this . When you are inserting in a Dynamic Array , first it will allocate a random continues memory location and when its gets filled it will again allocate double the size of memory location and then it will copy all old elements to the new location. Hence they are not recommended for implementing **Stacks**
+1. We can implement **Stacks** using  [Dynamic Array](https://carboncoffee.hashnode.dev/introduction-to-arrays)  but there is a problem with this . When you are inserting in a Dynamic Array, first it will allocate random continues memory location and when it gets filled it will again allocate double the size of the memory location and then it will copy all old elements to the new location. Hence they are not recommended for implementing **Stacks**
 
 2. To overcome this we make use of **DEQUE** in Python
 
 ### Using Deque 
 
-A double-ended queue, or deque, has the feature of adding and removing elements from either end. The Deque module is a part of collections library. It has the methods for adding and removing elements which can be invoked directly with arguments. In the below program we import the collections module and declare a deque. Without need of any class we use the in-built implement methods directly.
+A double-ended queue, or deque, has the feature of adding and removing elements from either end. The Deque module is a part of the collections library. It has the methods for adding and removing elements that can be invoked directly with arguments. In the below program we import the collections module and declare a deque. Without the need of any class, we use the in-built implement methods directly.
 
 - Importing Deque
 
@@ -92,10 +92,17 @@ if __name__ == '__main__':
     #S.is_empty()
 ``` 
 
-**So , This was the quick overview of Stacks in Python . I hope you liked the article . Follow back for the more upcoming article**
+## Thank-you! 
+
+I am glad you made it to the end of this article. I hope you got to learn something, if so please leave a **Like** which will encourage me for my upcoming write-ups. 
 
 
-> Leave a like if you learned something today.
+> 
+- [My GitHub Repos](https://github.com/akxat)  
+- Connect with me on  [Linkedin](https://www.linkedin.com/in/sharma-akshat/) 
+- Start  [your own blogs ](https://hashnode.com/@AkshatSharma/joinme) 
+
+%%[wid-1]
 
 
 
