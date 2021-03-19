@@ -14,14 +14,14 @@ A Graph is a non-linear data structure consisting of nodes and edges. The nodes 
 
 > **How is a Graph different from a Tree ?**
 
-> A Tree should have one path between two nodes, whereas in case of a Graph it is a complex data structures where we can randomly connect any two nodes, as we see in the above graph.
+> A Tree should have one path between two nodes, whereas in the case of a Graph it is a complex data structures where we can randomly connect any two nodes, as we see in the above graph.
 
 
 ## What are the Types of Graph?
 - **Weighted Graph** -> It is a type of Graph whose edges have values marked. These values are known as weights or cost or length.  These values might represent the distance between two points or the bandwidth.
 
 - **Unweighted Graph** -> Yes you are correct, there is no value or weight associated with the edge. 
-- **Undirected Graph** ->  the edges are bidirectional that means that there is no direction associated with them. Hence, the graph can be traversed in either direction.
+- **Undirected Graph** ->  the edges are bidirectional which means that there is no direction associated with them. Hence, the graph can be traversed in either direction.
 - **Directed Graphs** -> This Graph is sometimes referred to as the Diagraph. This is a set of vertices (nodes) connected by edges, with each node having a direction associated with it. Edges are usually represented by arrows pointing in the direction the graph can be traversed.
 
 # Let's Implement Graph using Python
@@ -162,12 +162,17 @@ if __name__ == '__main__':
 - Now your Graph Function is completed, try adding more functions according to your needs
 
 
-**
-So, This was the quick overview of Graph using Python. I hope you liked the article. Follow back for more upcoming article**
+## Thank-you! 
+
+I am glad you made it to the end of this article. I hope you got to learn something, if so please leave a **Like** which will encourage me for my upcoming write-ups. 
 
 
 > 
-Leave a like if you learned something today.
+- [My GitHub Repos](https://github.com/akxat)  
+- Connect with me on  [Linkedin](https://www.linkedin.com/in/sharma-akshat/) 
+- Start  [your own blogs ](https://hashnode.com/@AkshatSharma/joinme) 
+
+%%[wid-1]
 
 
 
