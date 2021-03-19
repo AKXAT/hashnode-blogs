@@ -74,7 +74,7 @@ class TreeNode:
                 each.print_tree()
 ``` 
 
-- The main RUN function which will create the class and add the child nodes to it 
+- The main RUN function will create the class and add the child nodes to it 
 
 
 ```
@@ -163,11 +163,15 @@ if __name__ == '__main__':
     |--Apple
 ``` 
 
-**
-So, This was the quick overview of General Tree in Python. I hope you liked the article. Follow back for the more upcoming article**
+## Thank-you! 
+
+I am glad you made it to the end of this article. I hope you got to learn something, if so please leave a **Like** which will encourage me for my upcoming write-ups. 
 
 
 > 
-Leave a like if you learned something today.
+- [My GitHub Repos](https://github.com/akxat)  
+- Connect with me on  [Linkedin](https://www.linkedin.com/in/sharma-akshat/) 
+- Start  [your own blogs ](https://hashnode.com/@AkshatSharma/joinme) 
 
+%%[wid-1]
 
