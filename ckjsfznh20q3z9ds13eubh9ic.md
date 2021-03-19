@@ -4,14 +4,14 @@
  [<- Go Back to Index ](https://carboncoffee.hashnode.dev/datastructures) 
 
 
-### What is the issue with Arrays ?
+### What is the issue with Arrays?
 
-If you want to insert or delete an element in an array at a given location then swap every element by one address space and hence the Big O complexity is O(n) .  [Click here to view the article on Arrays](https://carboncoffee.hashnode.dev/introduction-to-arrays) 
+If you want to insert or delete an element in an array at a given location then swap every element by one address space and hence the Big O complexity is O(n).  [Click here to view the article on Arrays](https://carboncoffee.hashnode.dev/introduction-to-arrays) 
 
-# What is Linked List?
+# What is a Linked List?
 
-A **linked list ** is a linear collection of data elements , in which each element points to the next. The first element contains the address of the second element and the second element contains the address of the third element and so on till the last element contains null. 
-It is a data structure consisting of a collection of nodes which together represent a sequence.
+A **linked list ** is a linear collection of data elements, in which each element points to the next. The first element contains the address of the second element and the second element contains the address of the third element and so on till the last element contains null. 
+It is a data structure consisting of a collection of nodes that together represent a sequence.
 
 The below image is the pictorial representation of a **Linked List.**
 
@@ -22,25 +22,25 @@ The below image is the pictorial representation of a **Linked List.**
 
 The below image represents a typical insertion in the Linked List
 
-So in case you want to **insert 284 at index 1** , then this is how it will be done?
+So in case you want to **insert 284 at index 1**, then this is how it will be done?
 
 All you need to do is change the address pointer at the element 298 - which is currently  **0x00A1**  (of the second element) to the element that you want to do - which is **0xC702** **( element 284 )
 **
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1610350669689/pwEg4Rh2r.png)
 
-The insertion becomes very easy because now you are just modifying the links unlike arrays in which you had to shift each element by a index.
+The insertion becomes very easy because now you are just modifying the links unlike arrays in which you had to shift each element by an index.
 
 The  [Big O complexity](https://carboncoffee.hashnode.dev/big-o-notation-quick-recap)  for  
  
-1.  Inserting Element at beginning is - O(1)
-2. Deleting Element at beginning is - O(1)
-3. Inserting/Deleting Element at end is - O(n) - because you need to traverse through all the elements via their address to reach the end.
+1.  Inserting Element at the beginning is - O(1)
+2. Deleting Element at the beginning is - O(1)
+3. Inserting/Deleting Element at the end is - O(n) - because you need to traverse through all the elements via their address to reach the end.
 4. Accessing Element by Value - O(n) 
 
-### What is Doubly Linked List ?
+### What is Doubly Linked List?
 
 A doubly linked list is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains three fields: 
-1. Two link fields(the first contains the address of previous element and the other contains the address of the next element) 
+1. Two link fields(the first contains the address of the previous element and the other contains the address of the next element) 
 2. One data field/element field.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1610352881820/hA2IH7Nrv.png)
@@ -75,7 +75,7 @@ class LinkedList:
 ``` 
  
 
-- **Function for adding element at the start **
+- **Function for adding an element at the start **
     
     
 ```
@@ -84,7 +84,7 @@ def insert_at_start(self,data):
         new_node = Node(data,self.head) #creating a new node 
         self.head = new_node #now head will point to newly created node
 ``` 
-- **Function for inserting element at the end 
+- **Function for inserting an element at the end 
 **
 
 ```
@@ -100,7 +100,7 @@ def insert_at_end(self,data):
 ``` 
 
 
-- **Function for finding length of the Linked List **
+- **Function for finding the length of the Linked List **
 
 ```
     def find_length(self):
@@ -167,7 +167,7 @@ if __name__ == '__main__':
 
 
 
-### Well , here is the whole code for you ,  try running yourself and add new features.
+### Well, here is the whole code for you,  try running yourself and add new features.
 
 
 ```
@@ -250,8 +250,17 @@ if __name__ == '__main__':
 
 
 
-You Just saw creating a new Linked List using Python and adding some functionality such as Add and Delete . Now you can go ahead and make few more functions such as inserting at a given index . Even you can try creating a Doubly Linked List.
+You Just saw creating a new Linked List using Python and adding some functionality such as Add and Delete. Now you can go ahead and make a few more functions such as inserting at a given index . Even you can try creating a Doubly Linked List.
 
-*Hope you liked the content , leave a like you learned something today and follow back for more of the Data Structure! *
+## Thank-you! 
 
+I am glad you made it to the end of this article. I hope you got to learn something, if so please leave a **Like** which will encourage me for my upcoming write-ups. 
+
+
+> 
+- [My GitHub Repos](https://github.com/akxat)  
+- Connect with me on  [Linkedin](https://www.linkedin.com/in/sharma-akshat/) 
+- Start  [your own blogs ](https://hashnode.com/@AkshatSharma/joinme) 
+
+%%[wid-1]
 
