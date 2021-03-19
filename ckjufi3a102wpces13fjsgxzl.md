@@ -4,12 +4,12 @@
  [<- Go Back to Index ](https://carboncoffee.hashnode.dev/datastructures) 
 
 
-## What is Hash Table ?
-A hash table is a data structure that implements an associative array abstract data type, a structure that can map keys to values. In other words we can say that , Hash Table is a data structure that stores the values using a **KEY:VALUE pairs.**
+## What is Hash Table?
+A hash table is a data structure that implements an associative array abstract data type, a structure that can map keys to values. In other words, we can say that the Hash Table is a data structure that stores the values using a **KEY: VALUE pairs.**
 
-In Python we make use of** Dictionaries** to store data values in **KEY:VALUE pairs. ** . So Dictionaries is the Python specific implementation for the Hash Table or Hash Map . Though we can implement same thing using 2D Arrays .
+In Python, we make use of** Dictionaries** to store data values in **KEY: VALUE pairs. ** . So Dictionaries is the Python-specific implementation for the Hash Table or Hash Map . Though we can implement the same thing using 2D Arrays.
 
-In the example given below , we are storing the price of the fruits and then printing the desired fruit price.
+In the example given below, we are storing the price of the fruits and then printing the desired fruit price.
 
 ```
 mydict = {'Apple' : 25 , 'Oranges' : 40 , 'Banana' :12 }
@@ -18,21 +18,21 @@ print(mydict['Apple'])
 
 ## Memory Representation in Hash Table 
 
-- When you create a **Dictionary** the first thing it dose is it creates a array of a random size (here it creates **Array of size 10**)  to store the **Value**
+- When you create a **Dictionary** the first thing it does is creates an array of a random size (here it creates **Array of size 10**)  to store the **Value**
 
-- Then it takes the first **Key** ,  this **Key** will be matched to specific **Value** in the list, and to get the **index **of the **Value** we make use of **Hash Function**
+- Then it takes the first **Key**,  this **Key** will be matched to specific **Value** in the list, and to get the **index **of the **Value** we make use of **Hash Function**
 
-See the below example , how **march **6 is mapped with **310** in the List using the hash function.
+See the below example, how **march **6 is mapped with **310** in the List using the hash function.
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1610437378258/HFrA_imDh.png)
 
 
-## What is Hash Function ?
+## What is Hash Function?
 
  A hash function is a function that takes a set of inputs of any arbitrary size and fits them into a table or other data structure that contains fixed-size elements.
 
-There are various ways to implement this **hash function ** . Today we will see one way which is using ASCII Numbers.
+There are various ways to implement this **hash function **. Today we will see one way which is using ASCII Numbers.
 
-### Lets take the above example and see how **march 6** was mapped with **310**
+### Let's take the above example and see how **march 6** was mapped with **310**
 
 - The ASCII representation of **ASCII of march 6** including space will be :
 
@@ -41,7 +41,7 @@ There are various ways to implement this **hash function ** . Today we will see 
 - Since initially we assigned the Array = 10 . we can perform a MOD operation :
 **MOD ( 609/10 ) --> 9 **
 
-- So this is you generated 9 using Hash Function .
+- So this is you generated 9 using Hash Function.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1610438879443/Hghi-OUp4T.png)
 
@@ -53,7 +53,7 @@ There are various ways to implement this **hash function ** . Today we will see 
 
 ## Let's Implement Hash Table in Python
 
-- First we create a Hash Function which will give the sum of  ASCII Values
+- First, we create a Hash Function which will give the sum of  ASCII Values
 
 
 ```
@@ -84,7 +84,7 @@ if __name__ == '__main__':
     t.hash_key('march 6')
 ``` 
 
-- Creating a function adding a Key : Value pairs
+- Creating a function adding a Key: Value pairs
 
 ```
 def add(self,key,value):
@@ -138,9 +138,9 @@ Though you will not use this **Hash Table in Python** because there is already *
 ## Collision Handling 
 
 ### What Happens in Collision 
-In the above examples we saw how the **Key** was matched with the **Index ** of the **value** using **Hash Functions **. 
+In the above examples, we saw how the **Key** was matched with the **Index ** of the **value** using **Hash Functions **. 
 
-Assume a situation where more than one **Keys** are assigned the **same Index** by the hash function . This is known as **Collision**. 
+Assume a situation where more than one **Keys** are assigned the **same Index** by the hash function. This is known as **Collision**. 
 
 In the below example both **march 6 and march 17** are assigned the **Index 9**
 
@@ -152,21 +152,21 @@ In the below example both **march 6 and march 17** are assigned the **Index 9**
 
 - In order to handle collisions we can make use of a method called **Chaining**
 
-- In **Chaining** Instead of directly storing the **Value** at the **Index** , we can store a **Linked List** of the Key-Value Pairs    
+- In **Chaining** Instead of directly storing the **Value** at the **Index**, we can store a **Linked List** of the Key-Value Pairs    
 
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1610445522455/GAISfD8gv.png)
 
 ## Implementing Chaining in Python
 
-- Initializing an Empty Array , because each value is storing KEY-VALUE pair 
+- Initializing an Empty Array, because each value is storing KEY-VALUE pair 
 
 ```
 def __init__(self):
         self.max = 100 #for initiating 100 sized list 
         self.arr =[[] for i in range(self.max)]
 ``` 
-- All Other function remains same . Now we need to edit the ADD function because while fetching the **Value** we need to iterate through the Array 
+- All Other function remains the same. Now we need to edit the ADD function because while fetching the **Value** we need to iterate through the Array 
 
 ```
 def add(self,key,value):
@@ -234,7 +234,7 @@ if __name__ == '__main__':
 
 ## Linear Probing 
 
-- Second Method is **Linear Probing** .  In this case when we see that an Index is already filled then it searches for a new Index and keeps on finding Index until it's empty.
+- Second Method is **Linear Probing**.  In this case when we see that an Index is already filled then it searches for a new Index and keeps on finding Index until it's empty.
 
 - In the below example you can see how **march 17** is stored at the **Index 1**
 
@@ -242,10 +242,16 @@ if __name__ == '__main__':
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1610446224424/2ACywj5zD.png)
 
 
-Now you can try Implementing Linear Probing in Python .
+Now you can try Implementing Linear Probing in Python.
 
-**I hope you liked this article . Feel free to leave suggestions in the comments below.**
+## Thank-you! 
+
+I am glad you made it to the end of this article. I hope you got to learn something, if so please leave a **Like** which will encourage me for my upcoming write-ups. 
 
 
 > 
-Leave a Like , If you learned something today !  
+- [My GitHub Repos](https://github.com/akxat)  
+- Connect with me on  [Linkedin](https://www.linkedin.com/in/sharma-akshat/) 
+- Start  [your own blogs ](https://hashnode.com/@AkshatSharma/joinme) 
+
+%%[wid-1] 
