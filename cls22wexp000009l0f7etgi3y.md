@@ -173,7 +173,7 @@ No, the shell doesn't directly interpret the C code for utilities like `ls`. Ins
 2. **Compilation:** The C code is then compiled using a C compiler (like GCC or Clang). The compiler translates the high-level C code into machine code (binary code) that the computer's hardware can execute. This command compiles the C code in the file `ls.c` and generates an executable file named `ls`.
     
 3. ```plaintext
-      gcc ls.c -o ls
+       gcc ls.c -o ls
     ```
     
 4. **Executable File:** The result is an executable file (`ls` in this case) that contains machine code instructions. This file is a binary executable that the operating system can run.
@@ -528,3 +528,16 @@ Most Used commands.....
 | `ifconfig` or `ip` | Display network configuration information |
 | `ping` | Test the reachability of a host on an IP network |
 | `traceroute` or `tracepath` | Trace the route packets take to a destination |
+
+## Thank-you!
+
+I am glad you made it to the end of this article. I hope you got to learn something, if so please leave a **Like** which will encourage me for my upcoming write-ups.
+
+* [My GitHub Repos](https://github.com/akxat)
+    
+* Connect with me on [Linkedin](https://www.linkedin.com/in/sharma-akshat/)
+    
+* Start [your own blogs](https://hashnode.com/@AkshatSharma/joinme)
+    
+
+%%[wid-1]
