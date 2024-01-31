@@ -1,4 +1,13 @@
-# This will help you get started with LINUX.
+---
+title: "Most Boring  Linux Article."
+datePublished: Sat Jan 28 2023 18:08:16 GMT+0000 (Coordinated Universal Time)
+cuid: cldg9nono00040ajp1tyefqf4
+slug: most-boring-linux-article
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1674929102299/771c07c7-be73-457e-b32a-f85913ecebbc.jpeg
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1674929256827/40e1c0d0-da46-42e8-b15b-32b906ff6746.jpeg
+tags: linux, linux-for-beginners, linux-basics
+
+---
 
 > Let's start with some basic queries you might have!
 
