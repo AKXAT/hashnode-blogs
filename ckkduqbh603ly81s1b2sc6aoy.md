@@ -65,7 +65,7 @@ class TreeNode:
 
 > 1. `def add_child(self, child):`: This is a method within the `TreeNode` class that takes another `TreeNode` object (`child`) as a parameter. It's used to add a child node to the current node in the tree.
 >     
-> 2. `self.child = child`: This line incorrectly assigns the `child` node to `self.child`. However, this is a mistake because it overwrites the previous value of `self.child` with the new `child`. This should instead append the new child to the list of children. The correct line should be `self.children.append(child)`.
+> 2. `self.child = child`: This line assigns the `child` node to `self.child`.
 >     
 > 3. `child.parent = self`: This line correctly sets the parent of the `child` node to be the current node (`self`). It establishes a bidirectional relationship between the parent and child nodes, allowing navigation up and down the tree.
 >     
