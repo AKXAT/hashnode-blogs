@@ -1,6 +1,6 @@
 ---
 title: "NGINX in Action: A Case Study on Enhancing In-House Web Performance"
-datePublished: Sat Jul 27 2024 17:01:56 GMT+0000 (Coordinated Universal Time)
+datePublished: Sat Jul 27 2024 18:30:00 GMT+0000 (Coordinated Universal Time)
 cuid: clz4dphlo000409l8a0gp6wgn
 slug: nginx-in-action-a-case-study-on-enhancing-in-house-web-performance
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1722099526140/66848ca6-91ad-448c-852e-033a6ea32d69.jpeg
