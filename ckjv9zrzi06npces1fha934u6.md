@@ -49,18 +49,11 @@ print(s.pop())
 3. **Using Deque in Python**: To overcome some of the limitations of dynamic arrays, especially with regard to reallocation and resizing, you can use a `deque` (double-ended queue) from Python’s `collections` module. A `deque` is optimized for fast append and pop operations from both ends, making it a more efficient choice for implementing stacks in scenarios where performance is critical.
     
 
-### Using LinkedList
+# Using LinkedList
 
 This implementation demonstrates a stack data structure using a linked list in Python. Let's break down how it works:
 
 ### 1\. **Node Class**
-
-The `Node` class is a basic building block for the linked list. Each `Node` object contains two attributes:
-
-* `value`: This stores the data (or value) for the node.
-    
-* `next`: This is a reference (or pointer) to the next node in the linked list. If there is no next node, this will be `None`.
-    
 
 ```python
 class Node:
@@ -69,14 +62,16 @@ class Node:
         self.next = next
 ```
 
-### 2\. **Stack Class**
-
-The `Stack` class manages the stack using the linked list, with several key methods:
-
-* **Initialization (**`__init__`):
+* The `Node` class represents an individual element (or node) in the linked list.
     
-    * [`self.top`](http://self.top): This attribute points to the top of the stack. Initially, it's `None`, indicating the stack is empty.
+* Each node contains:
+    
+    * `value`: The data stored in the node.
         
+    * `next`: A pointer/reference to the next node in the list.
+        
+
+### 2\. **Stack Class**
 
 ```python
 class Stack:
@@ -84,65 +79,126 @@ class Stack:
         self.top = None
 ```
 
-* **String Representation (**`__str__`):
+* The `Stack` class manages the linked list that represents the stack.
     
-    * This method returns a string representation of the stack. It traverses the linked list from the `top` node and builds a string with the values of each node, separated by arrows (`->`). The method omits the last arrow for a clean output.
-        
+* The stack is initialized with [`self.top`](http://self.top) `= None`, indicating that the stack is empty.
+    
+
+### 3\. **String Representation (**`__str__` method)
 
 ```python
 def __str__(self) -> str:
-        mystr = "" 
-        marker = self.top
-        while marker != None:
-            mystr = mystr + f"{marker.value}" + "-> "
-            marker = marker.next
-        return mystr[:-3]
+    mystr = "" 
+    marker = self.top
+    while marker != None:
+        mystr = mystr + f"{marker.value}" + "-> "
+        marker = marker.next
+    return mystr[:-3]
 ```
 
-* **Check if Stack is Empty (**`isempty`):
+* This method returns a string representation of the stack.
     
-    * This method checks whether the stack is empty by verifying if [`self.top`](http://self.top) is `None`. If it is, the stack is empty and returns `True`; otherwise, it returns `False`.
-        
+* It traverses the linked list from `top` to the end, appending each node's value to a string.
+    
+* The "-&gt;" symbol is used to denote the link between nodes.
+    
+* `mystr[:-3]` removes the trailing "-&gt;" from the final string.
+    
+
+### 4\. **Check if Stack is Empty (**`isempty` method)
 
 ```python
 def isempty(self):
-        return self.top == None
+    return self.top == None
 ```
 
-* **Push Method (**`push`):
+* This method checks whether the stack is empty by verifying if [`self.top`](http://self.top) is `None`.
     
-    * This method adds a new element to the top of the stack.
-        
-    * A new `Node` is created with the given `value`.
-        
-    * If the stack is not empty ([`self.top`](http://self.top) is not `None`), the `next` attribute of this new node is set to the current `top`node.
-        
-    * The `top` of the stack is then updated to this new node.
-        
+* Returns `True` if the stack is empty, otherwise `False`.
+    
+
+### 5\. **Peek at the Top Element (**`peek` method)
+
+```python
+def peek(self):
+    if self.isempty():
+        return "Stack Empty"
+    return self.top.value
+```
+
+* This method returns the value of the top element of the stack without removing it.
+    
+* If the stack is empty, it returns "Stack Empty".
+    
+
+### 6\. **Push an Element onto the Stack (**`push` method)
 
 ```python
 def push(self, value):
-        new_node = Node(value=value)
-        if self.top != None:
-            new_node.next = self.top
-        self.top = new_node
-        return
+    new_node = Node(value=value)
+    if self.top != None:
+        new_node.next = self.top
+    self.top = new_node
+    return
 ```
 
-### 3\. **Example Usage**
+* This method adds a new element to the stack.
+    
+* A new `Node` is created with the given `value`.
+    
+* If the stack is not empty ([`self.top`](http://self.top) `!= None`), the new node’s `next` pointer is set to the current `top` node.
+    
+* The `top` pointer is then updated to point to the new node, making it the top of the stack.
+    
 
-In the example usage:
+### 7\. **Pop an Element from the Stack (**`pop` method)
 
-* A new stack (`stack1`) is created.
+```python
+def pop(self):
+    if self.isempty():
+        return "Stack Empty"
+    self.top = self.top.next 
+```
+
+* This method removes the top element from the stack.
     
-* The `isempty` method is called, which returns `True` because the stack is initially empty.
+* If the stack is empty, it returns "Stack Empty".
     
-* Several values (10, 20, 30, 40, 50, 60) are pushed onto the stack.
+* Otherwise, it updates the `top` pointer to the next node in the stack, effectively removing the current top node.
     
-* After pushing these values, `isempty` is called again, which returns `False` because the stack now contains elements.
+
+### 8\. **Using the Stack**
+
+```python
+stack1 = Stack()
+print(stack1.isempty())   # True
+stack1.push(10)
+stack1.push(20)
+stack1.push(30)
+stack1.push(40)
+stack1.push(50)
+stack1.push(60)
+print(stack1.isempty())   # False
+print(stack1)             # 60-> 50-> 40-> 30-> 20-> 10
+print(stack1.peek())      # 60
+stack1.pop()
+print(stack1)             # 50-> 40-> 30-> 20-> 10
+```
+
+* The example code creates a stack and demonstrates its operations:
     
-* The `print(stack1)` statement calls the `__str__` method, which prints the contents of the stack as `60-> 50-> 40-> 30-> 20-> 10`, showing that the most recently pushed element (60) is at the top of the stack.
-    
+    * `stack1.isempty()` checks if the stack is empty initially and after pushing elements.
+        
+    * `stack1.push()` adds elements to the stack.
+        
+    * `stack1` (string representation) shows the stack’s current state.
+        
+    * `stack1.peek()` shows the top element without removing it.
+        
+    * `stack1.pop()` removes the top element and updates the stack.
+        
+
+Final Code
 
 ```python
 class Node:
@@ -165,13 +221,20 @@ class Stack:
     def isempty(self):
         return self.top == None
 
+    def peek(self):
+        if self.isempty():
+            return "Stack Emtpty"
+        return self.top.value
     def push(self, value):
         new_node = Node(value=value)
         if self.top != None:
             new_node.next = self.top
         self.top = new_node
         return
-
+    def pop(self):
+        if self.isempty():
+            return "Stack Empty"
+        self.top = self.top.next 
 
 
 stack1 = Stack()
@@ -184,9 +247,12 @@ stack1.push(50)
 stack1.push(60)
 print(stack1.isempty())
 print(stack1)
+print(stack1.peek())
+stack1.pop()
+print(stack1)
 ```
 
-### Using Deque
+# Using Deque
 
 A double-ended queue, or deque, has the feature of adding and removing elements from either end. The Deque module is a part of the collections library. It has the methods for adding and removing elements that can be invoked directly with arguments. In the below program we import the collections module and declare a deque. Without the need of any class, we use the in-built implement methods directly.
 
